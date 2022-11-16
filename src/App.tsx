@@ -12,8 +12,8 @@ export interface ITask {
 export function App() {
 	const [tasks, setTasks] = useState<ITask[]>([
 		{
-			id: "teste",
-			title: "teste",
+			id: "default",
+			title: "Passear com o cachorro.",
 			isCompleted: false,
 		},
 	]);
