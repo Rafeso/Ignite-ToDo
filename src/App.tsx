@@ -3,7 +3,7 @@ import { Tasks } from "./components/Tasks";
 
 export function App() {
 	return (
-		<div className="bg-gray-600 min-h-screen min-w-screen">
+		<div className="bg-gray-600 h-screen">
 			<Header />
       <Tasks />
 		</div>
