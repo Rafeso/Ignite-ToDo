@@ -33,10 +33,27 @@ export function App() {
 		const newTasks = tasks.filter((task) => task.id !== taskId);
 		setTasks(newTasks);
 	}
+
+	function handleToggleTaskCompletedById(taskId: string) {
+		const newTasks = tasks.map((task) => {
+			if (task.id === taskId) {
+				return {
+					...task,
+					isCompleted: !task.isCompleted,
+				};
+			}
+			return task;
+		});
+		setTasks(newTasks);
+	}
 	return (
 		<div className="bg-gray-600 h-screen">
 			<Header onAddTask={addTask} />
-			<Tasks tasks={tasks} onDelete={handleDeleteTaskById}/>
+			<Tasks
+				tasks={tasks}
+				onDelete={handleDeleteTaskById}
+        onComplete={handleToggleTaskCompletedById}
+			/>
 		</div>
 	);
 }
