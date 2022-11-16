@@ -28,7 +28,7 @@ export function Task({ task, onDelete, onComplete }: Props) {
 				)}
 			</button>
 
-			<p className={task.isCompleted ? "text-sm text-gray-300 line-through mr-auto" :"text-sm text-gray-100 mr-auto"}>{task.title}</p>
+			<p className={task.isCompleted ? "text-sm text-gray-300 line-through mr-auto overflow-hidden break-words" :"text-sm text-gray-100 mr-auto overflow-hidden break-words"}>{task.title}</p>
 
 			<button
 				className="text-gray-300 hover:text-red-500 transition-all"
