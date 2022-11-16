@@ -1,3 +1,4 @@
+import { ClipboardText } from "phosphor-react";
 import { ITask } from "../../App";
 import { Task } from "../Task/Index";
 
@@ -38,6 +39,16 @@ export function Tasks({ tasks, onDelete, onComplete }: Props) {
             onComplete={onComplete}
 					/>
 				))}
+
+        {tasks.length <= 0 && (
+          <section className="flex flex-col justify-center items-center border-t-2 border-gray-400 rounded-md">
+            <ClipboardText className="text-gray-300 opacity-40 mt-16 mb-2" size={56}/>
+            <div>
+              <p className="text-gray-300 font-bold text-center text-base">Você ainda não tem tarefas cadastradas</p>
+              <p className="text-gray-300 text-center text-base">Crie tarefas e organize seus itens a fazer </p>
+            </div>
+          </section>
+        )}
 			</div>
 		</section>
 	);
