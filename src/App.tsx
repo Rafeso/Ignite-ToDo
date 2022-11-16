@@ -10,13 +10,7 @@ export interface ITask {
 }
 
 export function App() {
-	const [tasks, setTasks] = useState<ITask[]>([
-		{
-			id: "default",
-			title: "Passear com o cachorro.",
-			isCompleted: false,
-		},
-	]);
+	const [tasks, setTasks] = useState<ITask[]>([]);
 
 	function addTask(taskTitle: string) {
 		setTasks([
@@ -52,7 +46,7 @@ export function App() {
 			<Tasks
 				tasks={tasks}
 				onDelete={handleDeleteTaskById}
-        onComplete={handleToggleTaskCompletedById}
+				onComplete={handleToggleTaskCompletedById}
 			/>
 		</div>
 	);
