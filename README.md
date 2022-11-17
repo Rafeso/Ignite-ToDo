@@ -54,7 +54,7 @@ O ToDo List foi desenvolvido no primeiro capitulo da trilha como um desafio sobr
 ## 🖌💻 Layout e Web
 
 <p align="center">
-  <img alt="Ignite Lab" title="#IgniteLab" src="./.github/WebPreview.png" width="100%">
+  <img alt="Ignite Lab" title="#IgniteLab" src="./.github/Capa.png" width="100%">
 </p>
 
 <div style="display: flex; gap: 0.5rem;">
