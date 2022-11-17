@@ -39,7 +39,7 @@ export function Header({ onAddTask }: Props) {
 					className="flex w-[40rem] p-3 rounded bg-gray-400 placeholder:text-gray-300 text-gray-100 leading-normal outline-none outline-1 focus:outline-purple-700 transition-all"
 					onChange={onChangeInput}
 					value={title}
-          required
+					required
 				/>
 				<button className="flex bg-gray-100 p-[0.8rem] rounded items-center bg-blue-700 text-gray-200 font-bold leading-normal text-sm hover:bg-blue-500 transition-all gap-1">
 					Criar
@@ -52,3 +52,4 @@ export function Header({ onAddTask }: Props) {
 		</div>
 	);
 }
+

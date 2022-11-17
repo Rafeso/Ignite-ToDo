@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import { Header } from "./components/Header/Index";
 import { Tasks } from "./components/Tasks";
-import { v4 as uuidv4 } from "uuid";
 
 export interface ITask {
 	id: string;
@@ -51,3 +52,4 @@ export function App() {
 		</div>
 	);
 }
+
